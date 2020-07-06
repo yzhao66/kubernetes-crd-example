@@ -6,7 +6,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime/schema"
 )
 
-const GroupName = "example.martin-helmich.de"
+const GroupName = "devices.kubeedge.io"
 const GroupVersion = "v1alpha1"
 
 var SchemeGroupVersion = schema.GroupVersion{Group: GroupName, Version: GroupVersion}
@@ -25,3 +25,4 @@ func addKnownTypes(scheme *runtime.Scheme) error {
 	metav1.AddToGroupVersion(scheme, SchemeGroupVersion)
 	return nil
 }
+
